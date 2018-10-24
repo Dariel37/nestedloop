@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+     height: 150px;
+	 width: 10%;
+     background-color:blue;
+}
+</style>
+<body>
+
+<div>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction()
+
+ {
+
+    var text = "";
+    var x, y;
+
+    Loop1:           // The first for loop is labeled "Loop1"
+    for (x = 1; x <= 5; x++) {
+    text += "<br>" + ""  + "";
+//  text += "<br>" + "" + x + ", y = ";
+
+    
+        Loop2:           // The second for loop is labeled "Loop2"
+        for (y = 1; y<=x; y++) {
+            if (y === 10) {
+                 continue Loop2;
+            }
+            document.getElementById("demo").innerHTML = text += "*";
+            //<!--------------------------text += y + "*";
+        }
+    }
+
+}
+
+</script>
+</div>
+</body>
+</head>
+</html>
